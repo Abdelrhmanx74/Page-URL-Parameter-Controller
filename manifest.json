@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Page Parameter Controller",
+    "version": "1.0",
+    "description": "Control page URL parameter with keyboard shortcuts",
+    "permissions": [
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "increase-page": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Up"
+            },
+            "description": "Increase page parameter"
+        },
+        "decrease-page": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Down"
+            },
+            "description": "Decrease page parameter"
+        }
+    }
+}
